@@ -1,5 +1,5 @@
-# TFG. Solución NAC (Network Access Control) para equipos de usuario en un IES
-Desarrollado como parte del Trabajo de Fin de Estudio, en el Grado en Ingeniería Informática de UNIR
+# Solución NAC (Network Access Control) para equipos de usuario en un IES
+# Desarrollado como parte del TFE, en el Grado en Ingeniería Informática de UNIR
 
 En líneas generales los institutos de enseñanza secundaria (IES) no disponen de ningún mecanismo que permita controlar los equipos que se conectan a su red cableada, lo que puede suponer una enorme brecha en lo que a seguridad se refiere. 
 

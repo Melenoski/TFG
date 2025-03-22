@@ -53,7 +53,7 @@ LOCK TABLES `Equipos` WRITE;
 /*!40000 ALTER TABLE `Equipos` DISABLE KEYS */;
 INSERT INTO `Equipos` VALUES
 (1,'192.168.10.11','11:22:33:44:55:66','javier-pc',1,'2025-03-21','2026-12-31','1'),
-(2,'192.168.10.12','AA:BB:CC:DD:EE:FF','jfl-portatil',1,'2025-03-21','2026-12-31','1'),
+(2,'192.168.10.12','68:45:F1:B8:23:34','jfl-portatil',1,'2025-03-21','2026-12-31','1'),
 (3,'192.168.20.11','11:11:11:22:22:22','agarcia-pc1',2,'2025-03-21','2026-12-31','1');
 /*!40000 ALTER TABLE `Equipos` ENABLE KEYS */;
 UNLOCK TABLES;

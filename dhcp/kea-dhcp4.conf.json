@@ -1,0 +1,96 @@
+{
+    "Dhcp4": {
+        "interfaces-config": {
+            "interfaces": [
+                "eth1"
+            ],
+            "dhcp-socket-type": "udp"
+        },
+        "lease-database": {
+            "type": "memfile",
+            "persist": true,
+            "name": "/var/lib/kea/kea-leases4.csv"
+        },
+        "reservations-global": false,
+        "reservations-in-subnet": true,
+        "reservations-out-of-pool": true,
+        "valid-lifetime": 28800,
+        "calculate-tee-times": true,
+        "loggers": [
+            {
+                "name": "*",
+                "severity": "INFO"
+            }
+        ],
+        "option-data": [
+            {
+                "name": "domain-name",
+                "data": "local"
+            },
+            {
+                "name": "domain-name-servers",
+                "data": "8.8.8.8"
+            },
+            {
+                "name": "time-servers",
+                "data": "150.214.94.5, 82.223.203.159"
+            }
+        ],
+        "subnet4": 
+            {
+                "id": 10,
+                "subnet": "192.168.10.0/24",
+                "option-data": [
+                    {
+                        "name": "routers",
+                        "data": "192.168.10.1"
+                    }
+                ],
+                "reservations": [
+                    {
+                        "hostname": "javier-pc",
+                        "hw-address": "11:22:33:44:55:66",
+                        "ip-address": "192.168.10.11"
+                    },
+                    {
+                        "hostname": "jfl-portatil",
+                        "hw-address": "68:45:F1:B8:23:34",
+                        "ip-address": "192.168.10.12"
+                    }
+                ]
+            },
+            {
+                "id": 20,
+                "subnet": "192.168.20.0/24",
+                "option-data": [
+                    {
+                        "name": "routers",
+                        "data": "192.168.20.1"
+                    }
+                ],
+                "reservations": [
+                    {
+                        "hostname": "agarcia-pc1",
+                        "hw-address": "11:11:11:22:22:22",
+                        "ip-address": "192.168.20.11"
+                    }
+                ]
+            },
+            {
+                "id": 30,
+                "subnet": "192.168.30.0/24",
+                "pools": [
+                    {
+                        "pool": "192.168.30.11 - 192.168.30.99"
+                    }
+                ],
+                "option-data": [
+                    {
+                        "name": "routers",
+                        "data": "192.168.30.1"
+                    }
+                ]
+            }
+        ]
+    }
+}

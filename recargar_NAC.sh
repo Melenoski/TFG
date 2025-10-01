@@ -1,5 +1,7 @@
 #! /bin/bash
 
+cd /root/tfg/radius
+/usr/bin/python3 gen_radius.py
 cd /root/tfg/dhcp
 /usr/bin/python3 gen_dhcp.py
 
